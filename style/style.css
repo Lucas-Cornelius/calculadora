@@ -1,0 +1,112 @@
+:root {
+    --gradient-color: radial-gradient(circle, rgba(48,0,22,1) 0%, rgba(0,22,47,1) 100%);
+    --text-color: #EEE4B1;
+    --text-color-hover: #aca68d;
+    --primary-color: #8b4769;
+    --primary-color-hover: #583948;
+    --second-color: #a17260;
+    --second-color-hover: #69534a;
+    --border-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-color);
+}
+
+.fi {
+    font-size: 2em;
+    color: var(--text-color);
+}
+
+.container {
+    border: 3px solid var(--border-color);
+    width: 30%;
+    height: 80%;
+    padding: .5em;
+    border-radius: 1em;
+}
+
+.container-display {
+    width: 100%;
+    height: 28%;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    overflow: hidden;
+    color: var(--border-color);
+}
+
+.container-grid {
+    display: grid;
+    width: 100%;
+    height: 70%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+button {
+    border-radius: 16px;
+    background-color: var(--second-color);
+}
+
+button:hover {
+    background-color: var(--second-color-hover);
+}
+
+.second-button {
+    background-color: var(--primary-color);
+}
+
+.second-button:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.enter {
+    grid-row: 4;
+    grid-column: 4;
+    height: 200%;
+    background-color: var(--text-color);
+}
+
+.enter:hover {
+    background-color: var(--text-color-hover);
+}
+
+.fi-br-equals {
+    color: var(--primary-color);
+}
+
+.credits {
+    position: absolute;
+    bottom: 1em;
+    color: var(--border-color);
+}
+
+.credits a {
+    color: var(--border-color);
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        border: 3px solid white;
+        width: 80%;
+        height: 80%;
+        padding: .5em;
+        border-radius: 1em;
+    }
+}

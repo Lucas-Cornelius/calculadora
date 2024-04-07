@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section class="container">
+        <article class="container-display">
+            <p id="display"></p>
+        </article>
+        <article class="container-grid">
+            <button onclick="sendValue('clear')" class="second-button"><i class="fi fi-br-c"></i></button>
+            <button onclick="sendValue('%')" class="second-button"><i class="fi fi-br-percentage"></i></button>
+            <button onclick="sendValue('/')" class="second-button"><i class="fi fi-br-divide"></i></button>
+            <button onclick="sendValue('*')" class="second-button"><i class="fi fi-br-cross"></i></button>
+            <button onclick="sendValue(7)" ><i class="fi fi-br-7"></i></button>
+            <button onclick="sendValue(8)"><i class="fi fi-br-8"></i></button>
+            <button onclick="sendValue(9)"><i class="fi fi-br-9"></i></button>
+            <button onclick="sendValue('-')" class="second-button"><i class="fi fi-br-minus"></i></button>
+            <button onclick="sendValue(4)"><i class="fi fi-br-4"></i></button>
+            <button onclick="sendValue(5)"><i class="fi fi-br-5"></i></button>
+            <button onclick="sendValue(6)"><i class="fi fi-br-6"></i></button>
+            <button onclick="sendValue('+')" class="second-button"><i class="fi fi-br-plus"></i></button>
+            <button onclick="sendValue(1)"><i class="fi fi-br-1"></i></button>
+            <button onclick="sendValue(2)"><i class="fi fi-br-2"></i></button>
+            <button onclick="sendValue(3)"><i class="fi fi-br-3"></i></button>
+            <button onclick="sendValue(0)"><i class="fi fi-br-0"></i></button>
+            <button onclick="sendValue('.')"><i class="fi">.</i></button>
+            <button onclick="sendValue('del')"><i class="fi fi-br-delete"></i></button>
+            <button onclick="sendValue('=')" class="second-button enter"><i class="fi fi-br-equals"></i></button>
+        </article>
+    </section>
+    <p class="credits">Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+    <script src="js/app.js"></script>
+</body>
+</html>
