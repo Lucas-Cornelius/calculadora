@@ -92,8 +92,7 @@ button:hover {
 }
 
 .credits {
-    position: absolute;
-    bottom: 1em;
+    height: 3%;
     color: var(--border-color);
 }
 
