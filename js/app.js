@@ -7,15 +7,18 @@ function sendValue(x) {
         if(porcentagem) {
             let valorArray = valor.innerHTML.split('%');
             calculo = eval(valorArray[0])*eval(valorArray[1])*0.01;
-            if(isNaN(calculo)) {
-                alert('Houve um erro, tente novamente!');
-                valor.innerHTML = '';
-                return
-            }
             valor.innerHTML = calculo;
+            
         }
-
+        
         valor.innerHTML = eval(valor.innerHTML);
+
+        if(isNaN(parseInt(valor.innerHTML))) {
+            alert('Houve um erro, tente novamente!');
+            valor.innerHTML = '';
+            return
+        }
+        
         return;
     } else if(x == 'clear') {
         valor.innerHTML = '';
