@@ -102,10 +102,6 @@ button:hover {
 
 @media screen and (max-width: 800px) {
     .container {
-        border: 3px solid white;
         width: 80%;
-        height: 80%;
-        padding: .5em;
-        border-radius: 1em;
     }
 }
