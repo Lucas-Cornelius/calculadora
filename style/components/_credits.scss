@@ -1,0 +1,18 @@
+@use '../abstract/variaveis';
+
+.credits {
+    color: variaveis.$text-color;
+    position: absolute;
+    bottom: 3%;
+
+    & a{
+        color: variaveis.$text-color;
+        text-decoration: none;
+        opacity: 1;
+        transition: all .3s ease;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
